@@ -22,3 +22,5 @@ with open(fileToRead, 'r') as read_obj:
             #May need to null this ?
         except:
              print(" ",",",hostname,",","Failed", file =f)
+                
+  #      ******note to self upload the csv / .txt output as opposed to console print****
