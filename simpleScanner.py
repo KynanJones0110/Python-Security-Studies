@@ -11,10 +11,10 @@ print("Scanning Host ", targetIP, "from port ", lowport, "to port", highport)
 
 for port in range(lowport, highport):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    status = s.connect_ex((target, port))
+    status = s.connect_ex((targetIP, targetPort))
     if(status == 0):
         print("*** Port ", targetPort," OPEN ***")
     else:
-        print("*** Port ", targetport, " CLOSED ***")
+        print("*** Port", targetport, " CLOSED ***")
     s.close()
     
