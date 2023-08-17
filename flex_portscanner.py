@@ -22,7 +22,7 @@ if len(sys.argv) < 2:
     if len(sys.argv) == 2:
         target = validate_ip(sys.argv[1])
         # add default
-        if target_ip is None: 
+        if target is None: 
             print("Invalid IP:",sys.argv[1])
             sys.exit(1)
         else:
